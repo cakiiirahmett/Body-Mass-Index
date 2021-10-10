@@ -6,21 +6,21 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Kilonuz Nedir ? : ");
-        int kilo = scanner.nextInt();
-        System.out.print("Boyunuz Nedir ? :");
-        double boy = scanner.nextDouble();
+        System.out.print("What is your weight ? : ");
+        int weight = scanner.nextInt();
+        System.out.print("What is your height ? :");
+        double height = scanner.nextDouble();
 
-        double bki = kilo / (boy * boy);
+        double bki = weight / (height * heighty);
 
         if (bki < 18.5) {
-            System.out.println("Zayıf");
+            System.out.println("Weak");
         } else if (bki >= 18.5 && bki < 25) {
             System.out.println("Normal");
         } else if (bki >= 25 && bki < 30){
-            System.out.println("Fazla Kilolu");
+            System.out.println("Overweight");
         }else {
-            System.out.println("Obez");
+            System.out.println("Obese");
 
         }
 
