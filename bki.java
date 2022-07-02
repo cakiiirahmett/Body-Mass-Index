@@ -11,7 +11,7 @@ public class Main {
         System.out.print("What is your height ? :");
         double height = scanner.nextDouble();
 
-        double bki = weight / (height * heighty);
+        double bki = weight / (height * height);
 
         if (bki < 18.5) {
             System.out.println("Weak");
